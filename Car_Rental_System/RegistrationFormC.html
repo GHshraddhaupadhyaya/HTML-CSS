@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Car</title>
+    <link rel="stylesheet" href="navigationbar.css">
+    <style>
+        body{
+            background-image: url('CarBackgnd.jpeg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @font-face {
+            font-family: Roboto;
+            src: url(/fonts/Roboto-ExtraBold.ttf);
+        }
+        h1{
+            font-family: Roboto;
+            text-align: center;
+            color: rgb(110, 12, 31);
+        }
+        form{
+            background-color: rgba(255, 127, 80, 0.546);
+            padding: 20px 20px 20px;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(79, 1, 1);
+            width: 500px;
+            border: 2px solid crimson;
+            border-radius: 20px;
+        }
+        form:focus{
+            transition: ease-in ;
+            transform: scale(1.05);
+        }
+        .i{
+            height: 20px;
+        }
+        @keyframes buttonAnimation{
+            0%{background-color: bisque;}
+            50%{background-color: coral;}
+        }
+        .b{
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid white;
+            animation: buttonAnimation 1s infinite ;
+        }
+        .b:hover{
+            transform: scale(1.1);
+        }
+        .i{
+            box-shadow: 2px 2px 5px rgb(141, 51, 51);
+            border: 2px solid  rgb(179, 38, 38);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a class="a1" href="CarRentalHome.html">Home</a>
+        <a class="a2" href="CarRentalCars.html">Available Cars</a>
+        <a class="a3" href="CarPricing.html">Pricing</a>
+        <a class="a4 active" href="RegistrationFormC.html">Booking Form</a>
+        <a class="a5" href="CarContact.html">Contact Us</a>
+    </div>
+    <h1>Order Now</h1>
+    <center><form>
+        <label for="name">Full Name: </label>
+        <input required id="name" class="i" type="text" placeholder="  full name"><br><br>
+        <label for="email">Email: </label>
+        <input required id="email" class="i" type="text" placeholder="  email"><br><br>
+        <label for="phone">Phone No.: </label>
+        <input required id="phone" class="i" type="text" placeholder="  phone number"><br><br>
+        <label for="start">Start Date: </label>
+      <input required class="i" type="date" id="start" required><br><br>
+
+      <label for="end">End Date: </label>
+      <input required class="i" type="date" id="end" required><br><br>
+      <label for="insurance">Insurance: </label>
+      <input type="radio" class="i" id="insurance">Insurance<br><br>
+      <label for="terms">Terms: </label>
+      <input type="checkbox" class="i" id="terms">Terms<br><br>
+        <button class="b" type="submit">Submit</button>
+        <button class="b" type="reset">Reset</button>
+    </form></center>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="navigationbar.css">
+    <style>
+        body{
+            background-image: url('CarBackgnd.jpeg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @font-face {
+            font-family: Roboto;
+            src: url(/fonts/Roboto-ExtraBold.ttf);
+        }
+        h1{
+            font-family: Roboto;
+            text-align: center;
+            color: rgb(109, 3, 24);
+        }
+        tr:nth-child(even){
+            background-color: rgb(245, 180, 156);
+        }
+        tr{
+            background-color: antiquewhite;
+        }
+        .r:hover{
+            transform: scale(1.05);
+        }
+        .t1 th{ 
+            color: black;
+            font-size: medium;
+            font-family: Roboto;
+            font-weight: bold; 
+            background-color: coral;
+            border: 4px solic crimson;
+        }
+        th, td{
+            padding: 20px 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a class="a1" href="CarRentalHome.html">Home</a>
+        <a class="a2" href="CarRentalCars.html">Available Cars</a>
+        <a class="a3 active" href="CarPricing.html">Pricing</a>
+        <a class="a4" href="RegistrationFormC.html">Booking Form</a>
+        <a class="a5" href="CarContact.html">Contact Us</a>
+    </div>
+    <h1>Car Pricing</h1>
+    <center>  
+    <table class="t1" style="width: 800px; border: 4px solid white; border-radius: 10px;">
+        <tr><th>Car Type</th>
+        <th>Price per Day</th>
+        <th>Price per Week</th>
+        <th>Notes</th>
+        </tr>
+        <tr class="r">
+            <td>Maruti Suzuki</td>
+            <td>Rs. 2000</td>
+            <td>Rs. 8000</td>
+            <td>Affordability, fuel efficiency, and ease of maintenance</td>
+        </tr>
+        <tr class="r">
+            <td>Swift</td>
+            <td>Rs. 2800</td>
+            <td>Rs. 9000</td>
+            <td>Sporty design and fuel efficient</td>
+        </tr>
+        <tr class="r">
+            <td>Tata Tiago</td>
+            <td>Rs. 3000</td>
+            <td>Rs. 9800</td>
+            <td>Sporty exterior, upmarket interior, and solid build quality</td>
+        </tr>
+        <tr class="r">
+            <td>Mahindra XUV</td>
+            <td>Rs. 5000</td>
+            <td>Rs. 10,500</td>
+            <td>Rear disc brakes and multiple airbags</td>
+        </tr>
+        <tr class="r">
+            <td>Fronx</td>
+            <td>Rs. 6000</td>
+            <td>Rs. 15,000</td>
+            <td>Sporty design and fuel efficient</td>
+        </tr>
+    </table>
+    </center>
+</body>
+</html>

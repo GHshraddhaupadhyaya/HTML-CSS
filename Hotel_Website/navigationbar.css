@@ -1,0 +1,28 @@
+.nav{
+            margin-left: 20px;
+            position: sticky;
+            top: 0;
+            background-color: crimson;
+            width: 1215px;
+            height: 50px;
+        }
+        .nav a.active{
+            background-color: aliceblue;
+            color: darkred;
+            border: 2px solid darkred;
+        }
+        .nav a{
+            margin-top: 6px;
+            margin-left: 130px;
+            display: inline-block;
+            background-color: rgba(164, 83, 83, 0.486);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px;
+            border: 2px solid white;
+        }
+        .nav a.a1:hover,.nav a.a2:hover,.nav a.a3:hover,.nav a.a4:hover,.nav a.a5:hover{
+            transform: scale(1.5,1.5);
+        }

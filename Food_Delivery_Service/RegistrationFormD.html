@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="navigationbar.css">
+    <style>
+       body{
+            background-image: url('FoodDeliveryBack.jpeg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @font-face {
+            font-family: Roboto;
+            src: url(/fonts/Roboto-ExtraBold.ttf);
+        }
+        h1{
+            font-family: Roboto;
+            text-align: center;
+            color: orange;
+        }
+        form{
+            background-color: rgb(252, 177, 78);
+            padding: 20px 20px 20px;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(79, 1, 1);
+            width: 500px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        .i{
+            height: 20px;
+        }
+        @keyframes buttonAnimation{
+            0%{background-color: bisque;}
+            50%{background-color: rgb(247, 184, 68);}
+        }
+        .b{
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid white;
+            animation: buttonAnimation 1s infinite ;
+        }
+        .b:hover{
+            transform: scale(1.1);
+        }
+        .i{
+            box-shadow: 2px 2px 5px rgb(79, 1, 1);
+            border: 2px solid  rgb(79, 1, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a class="a1" href="DeliveryHome.html">Home</a>
+        <a class="a2" href="DeliveryMenu.html">Menu</a>
+        <a class="a3" href="DeliveryPricing.html">Pricing</a>
+        <a class="a4 active" href="RegistrationFormD.html">Order Now</a>
+        <a class="a5" href="DeliveryContact.html">Contact Us</a>
+    </div>
+    <h1>Order Now</h1>
+    <center><form>
+        <label for="name">Full Name: </label>
+        <input required id="name" class="i" type="text" placeholder="  full name"><br><br>
+        <label for="email">Email: </label>
+        <input required id="email" class="i" type="text" placeholder="  email"><br><br>
+        <label for="phone">Phone No.: </label>
+        <input required id="phone" class="i" type="text" placeholder="  phone number"><br><br>
+        <label for="dish">Select your Dish: </label>
+        <select class="i" id="dish" required>
+            <option>Select Dish</option>
+            <option>Paneer Butter Masala</option>
+            <option>Veg Biriyani</option>
+            <option>Chole Bhature</option>
+            <option>Masala Dosa</option>
+            <option>Rajma Chaval</option>
+        </select><br><br>
+        <label for="quantity">Quantity: </label> 
+        <input class="i" type="number" id="quantity" step="1" min="1" max="10"><br><br>
+        <label>Delivery Options: </label><br>
+        <div style="font-size: 14px;">
+            <input type="radio">Home Delivery
+            <input type="radio">Pick Up
+        </div><br><br>
+        <label>Add-ons: </label><br>
+        <div style="font-size: 14px;">
+            <input type="checkbox">Extra Sauce
+            <input type="checkbox">Cutlery
+            <input type="checkbox">Napkins
+        </div><br><br>
+        <label>Special Instructions: </label>
+        <textarea class="i" rows="3"></textarea>
+        <br><br>
+        <button class="b" type="submit">Order Now</button>
+        <button class="b" type="reset">Reset</button>
+    </form></center>
+</body>
+</html>

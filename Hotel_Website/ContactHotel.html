@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="navigationbar.css">
+
+  <style>
+        body{
+            background-image: url('HotelImage.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    .container {
+      margin-top: 100px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: maroon;
+      margin-bottom: 20px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 0 10px gray;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .contact-info a {
+      color: maroon;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: darkblue;
+      transform: scale(1.05);
+      text-decoration: underline;
+    }
+
+    .emoji {
+      font-size: 20px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <a class="a1" href="HomeHotel.html">Home</a>
+    <a class="a2" href="RoomsHotel.html">Rooms</a>
+    <a class="a3" href="PricingHotel.html">Pricing</a>
+    <a class="a4" href="RegistrationForm.html">Booking</a>
+    <a class="a5 active" href="ContactHotel.html">Contact</a>
+  </div>
+
+  <div class="container">
+
+    <div class="map-container">
+      <h2>Find Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1953.7191081235735!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670f1f6d3e1%3A0xb2d741d6c327f38e!2sPadma%20Vilas%20Hotel!5e0!3m2!1sen!2sin!4v1655638722874!5m2!1sen!2sin"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p><span class="emoji">📍</span><strong>Address:</strong> Padma Vilas Hotel, Mysore, Karnataka</p>
+      <p><span class="emoji">📧</span><strong>Email:</strong> <a href="mailto:padmavilas@gmail.com">padmavilas@gmail.com</a></p>
+      <p><span class="emoji">📱</span><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+      <p><span class="emoji">🌐</span><strong>Instagram:</strong> <a href="https://instagram.com/padmavilashotel" target="_blank">@padmavilashotel</a></p>
+      <p><span class="emoji">👍</span><strong>Facebook:</strong> <a href="https://facebook.com/padmavilashotel" target="_blank">Padma Vilas on Facebook</a></p>
+    </div>
+
+  </div>
+
+</body>
+</html>

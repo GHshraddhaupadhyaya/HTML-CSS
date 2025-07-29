@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Padma Vilas</title>
+    <link rel="stylesheet" href="navigationbar.css">
+    <style>
+        body{
+            background-image: url('HotelImage.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .form {
+      max-width: 600px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: maroon;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid rgb(166, 166, 166);
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    .radio-group, .checkbox-group {
+      margin-top: 10px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 20px;
+      font-weight: normal;
+    }
+
+    .btn-group {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+      background-color: maroon;
+      animation: pulse 1.5s infinite;
+      transition: transform 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      animation: bounce 0.5s;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(128, 0, 0, 0.5); }
+      70% { box-shadow: 0 0 0 10px rgba(128, 0, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(128, 0, 0, 0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+  </style>
+</head>
+<body>
+    <div class="nav">
+            <a class="a1" href="HomeHotel.html">Home</a>
+            <a class="a2" href="RoomsHotel.html">Rooms</a>
+            <a class="a3" href="PricingHotel.html">Pricing</a>
+            <a class="a4 active" href="RegistrationForm.html">Booking</a>
+            <a class="a5" href="ContactHotel.html">Contact</a>
+        </div>
+  <div class="form">
+    <h2>Book Your Stay</h2>
+    <form action="#" method="POST">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10-digit number">
+
+      <label for="checkin">Check-in Date</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Check-out Date</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label for="room">Room Type</label>
+      <select id="room" name="room" required>
+        <option value="">-- Select Room --</option>
+        <option value="deluxe">Deluxe Room</option>
+        <option value="suite">Suite</option>
+        <option value="family">Family Room</option>
+        <option value="single">Single Room</option>
+      </select>
+
+      <label>Number of Guests</label>
+      <div class="radio-group">
+        <label><input type="radio" name="guests" value="1" required> 1</label>
+        <label><input type="radio" name="guests" value="2"> 2</label>
+        <label><input type="radio" name="guests" value="3+"> 3+</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="special"> Special Request / Subscribe to Newsletter</label>
+      </div>
+
+      <div class="btn-group">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
